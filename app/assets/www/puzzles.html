@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html> <!-- manifest="trakdoku.appcache"> -->
+<head>
+<title>Trakdoku</title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="style/trakdoku.css"/>
+
+<link rel="icon" sizes="32x32" href="img/icons/trakdoku_icon32.png" type='image/png'>
+<link rel="icon" sizes="128x128" href="img/icons/trakdoku_icon128.png" type='image/png'>
+<link rel="icon" sizes="192x192" href="img/icons/trakdoku_icon192.png" type='image/png'>
+
+<link rel="apple-touch-icon" href="img/icons/trakdoku_icon60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/icons/trakdoku_icon76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icons/trakdoku_icon120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icons/trakdoku_icon152.png">
+<link rel="apple-touch-icon-precomposed" href="img/icons/trakdoku_icon196.png"/>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<script src="js/trakdoku.js"></script>
+<script src="js/puzzles.js"></script>
+
+</head>
+<body onload="javascript:on_loaded('puzzle_links','local_puzzles')">
+<div class='title_div'><a href="javascript:app_next_page('index.html');"><img src="img/icons/back_icon.png"><span>Trakdoku</span></a></div>
+
+<ul class='puzzle_links' id='puzzle_links'>
+<li class='puzzle_links_item' id='puzzle_17'><a href="javascript:app_load_puzzle('id=17&author=ian&title=INTRO #1&dimensions=4-4&fixed=0-0-EW,3-3-EN&targets=1-1-1-4,4-1-1-1&tracks=1-0-EW,2-0-EW,3-0-SW,3-1-NS,3-2-NS&counts=1-1-1-4,4-1-1-1');">INTRO #1 <span id='score_17' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_18'><a href="javascript:app_load_puzzle('id=18&author=ian&title=INTRO #2&dimensions=4-4&fixed=0-0-NS,3-3-EW&targets=4-1-1-1,1-1-1-4&tracks=0-1-NS,0-2-NS,0-3-EN,1-3-EW,2-3-EW&counts=4-1-1-1,1-1-1-4');">INTRO #2 <span id='score_18' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_19'><a href="javascript:app_load_puzzle('id=19&author=ian&title=INTRO #3&dimensions=4-4&fixed=0-0-EW,1-1-EN,3-3-EN&targets=1-2-1-3,2-3-1-1&tracks=1-0-SW,2-1-EW,3-1-SW,3-2-NS&counts=1-2-1-3,2-3-1-1');">INTRO #3 <span id='score_19' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_20'><a href="javascript:app_load_puzzle('id=20&author=ian&title=INTRO #4&dimensions=4-4&fixed=3-0-ES,0-2-EW&targets=1-2-3-4,1-3-4-2&tracks=1-1-ES,2-1-SW,3-1-NS,1-2-NW,2-2-NS,3-2-NS,2-3-EN,3-3-NW&counts=1-2-3-4,1-3-4-2');">INTRO #4 <span id='score_20' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_21'><a href="javascript:app_load_puzzle('id=21&author=ian&title=INTRO #5&dimensions=4-4&fixed=3-0-ES,0-1-EW&targets=1-3-3-2,1-4-2-2&tracks=1-1-SW,2-1-ES,3-1-NW,1-2-NS,2-2-NS,1-3-EN,2-3-NW&counts=1-3-3-2,1-4-2-2');">INTRO #5 <span id='score_21' class='score'></span></a></li>
+
+<li class='puzzle_links_item' id='puzzle_1'><a href="javascript:app_load_puzzle('id=1&author=ian&title=NOVICE%20#1&dimensions=5-5&fixed=0-0-EW,4-4-EN&targets=1-2-3-1-2,2-2-1-3-1&tracks=1-0-SW,1-1-EN,2-1-SW,2-2-NS,2-3-EN,3-3-EW,4-3-SW&counts=1-2-3-1-2,2-2-1-3-1');">NOVICE #1 <span id='score_1' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_2'><a href="javascript:app_load_puzzle('id=2&author=ian&title=NOVICE%20#2&dimensions=5-5&fixed=4-0-ES,0-4-EW&targets=1-3-1-2-4,1-1-4-3-2&tracks=4-1-NS,1-2-ES,2-2-EW,3-2-SW,4-2-NS,1-3-NS,3-3-EN,4-3-NW,1-4-NW&counts=1-3-1-2-4,1-1-4-3-2');">NOVICE #2<span id='score_2' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_3'><a href="javascript:app_load_puzzle('id=3&author=ian&title=NOVICE%20#3&dimensions=5-5&fixed=4-0-ES,0-2-SW&targets=3-2-1-3-2,1-2-2-4-2&tracks=3-1-ES,4-1-NW,3-2-NS,0-3-NS,1-3-ES,2-3-EW,3-3-NW,0-4-EN,1-4-NW&counts=3-2-1-3-2,1-2-2-4-2');">NOVICE #3<span id='score_3' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_4'><a href="javascript:app_load_puzzle('id=4&author=ian&title=NOVICE%20#4&dimensions=5-5&fixed=0-0-EN,3-4-SW&targets=1-3-4-4-2,4-2-3-2-3&tracks=1-0-EW,2-0-EW,3-0-SW,3-1-EN,4-1-SW,2-2-ES,3-2-EW,4-2-NW,1-3-ES,2-3-NW,1-4-EN,2-4-EW&counts=1-3-4-4-2,4-2-3-2-3');">NOVICE #4<span id='score_4' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_5'><a href="javascript:app_load_puzzle('id=5&author=ian&title=NOVICE%20#5&dimensions=5-5&fixed=0-0-EW,4-1-ES,2-2-EW&targets=4-5-3-5-3,4-4-5-4-3&tracks=1-0-EW,2-0-EW,3-0-SW,0-1-ES,1-1-SW,3-1-NS,0-2-NS,1-2-EN,3-2-NW,4-2-NS,0-3-EN,1-3-SW,3-3-ES,4-3-NW,1-4-EN,2-4-EW,3-4-NW&counts=4-5-3-5-3,4-4-5-4-3');">NOVICE #5<span id='score_5' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_42'><a href="javascript:app_load_puzzle('id=42&author=ian&title=NOVICE #6&dimensions=5-5&fixed=4-2-EW,0-4-EW&targets=4-4-4-4-1,4-3-5-3-2&tracks=0-0-ES,1-0-EW,2-0-EW,3-0-SW,0-1-NS,2-1-ES,3-1-NW,0-2-EN,1-2-SW,2-2-NS,3-2-ES,1-3-NS,2-3-EN,3-3-NW,1-4-NW&counts=4-4-4-4-1,4-3-5-3-2');">NOVICE #6<span id='score_42' class='score'></span></a></li>
+<li class="puzzle_links_item" id="puzzle_44"><a href="javascript:app_load_puzzle('id=44&author=ian&title=NOVICE #7&dimensions=5-5&fixed=0-0-SW,4-0-EW&targets=5-3-3-4-4,4-4-4-2-5&tracks=2-0-ES,3-0-EW,0-1-EN,1-1-SW,2-1-EN,3-1-SW,0-2-ES,1-2-NW,3-2-EN,4-2-SW,0-3-NS,4-3-NS,0-4-EN,1-4-EW,2-4-EW,3-4-EW,4-4-NW&counts=5-3-3-4-4,4-4-4-2-5');">NOVICE #7<span id="score_44" class="score"></span></a></li>
+<li class="puzzle_links_item" id="puzzle_45"><a href="javascript:app_load_puzzle('id=45&author=ian&title=NOVICE #8&dimensions=5-5&fixed=0-0-SW,4-4-SW&targets=3-2-4-5-3,4-5-3-2-3&tracks=2-0-ES,3-0-EW,4-0-SW,0-1-NS,1-1-ES,2-1-NW,3-1-ES,4-1-NW,0-2-EN,1-2-NW,3-2-NS,2-3-ES,3-3-NW,2-4-EN,3-4-EW&counts=3-2-4-5-3,4-5-3-2-3');">NOVICE #8<span id="score_45" class="score"></span></a></li>
+<li class="puzzle_links_item" id="puzzle_46"><a href="javascript:app_load_puzzle('id=46&author=ian&title=NOVICE #9&dimensions=5-5&fixed=0-0-EW,4-4-EN&targets=4-3-4-3-3,3-1-5-3-5&tracks=1-0-EW,2-0-SW,2-1-NS,0-2-ES,1-2-EW,2-2-NW,3-2-ES,4-2-SW,0-3-NS,3-3-NS,4-3-NS,0-4-EN,1-4-EW,2-4-EW,3-4-NW&counts=4-3-4-3-3,3-1-5-3-5');">NOVICE #9<span id="score_46" class="score"></span></a></li>
+<li class="puzzle_links_item" id="puzzle_47"><a href="javascript:app_load_puzzle('id=47&author=ian&title=NOVICE #10&dimensions=5-5&fixed=4-0-EW,0-1-NS,0-4-NW&targets=5-4-4-5-3,5-5-4-4-3&tracks=0-0-ES,1-0-EW,2-0-EW,3-0-EW,1-1-ES,2-1-EW,3-1-EW,4-1-SW,0-2-EN,1-2-NW,3-2-ES,4-2-NW,0-3-ES,1-3-EW,2-3-SW,3-3-NS,2-4-EN,3-4-NW&counts=5-4-4-5-3,5-5-4-4-3');">NOVICE #10<span id="score_47" class="score"></span></a></li>
+
+<li class='puzzle_links_item' id='puzzle_6'><a href="javascript:app_load_puzzle('id=6&author=ian&title=EASY%20#1&dimensions=6-6&fixed=0-0-EW,3-1-NS,5-5-EN&targets=1-4-4-4-2-4,4-3-5-5-1-1&tracks=1-0-SW,2-0-ES,3-0-SW,1-1-EN,2-1-NW,1-2-ES,2-2-EW,3-2-NW,4-2-ES,5-2-SW,1-3-EN,2-3-EW,3-3-EW,4-3-NW,5-3-NS,5-4-NS&counts=1-4-4-4-2-4,4-3-5-5-1-1');">EASY #1<span id='score_6' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_7'><a href="javascript:app_load_puzzle('id=7&author=ian&title=EASY%20#2&dimensions=6-6&fixed=0-0-EW,4-1-ES,5-5-EW&targets=4-4-3-3-5-4,4-6-6-4-1-2&tracks=1-0-SW,2-0-ES,3-0-SW,0-1-ES,1-1-NW,2-1-NS,3-1-NS,5-1-SW,0-2-NS,1-2-ES,2-2-NW,3-2-EN,4-2-NW,5-2-NS,0-3-EN,1-3-NW,4-3-ES,5-3-NW,4-4-NS,4-5-EN&counts=4-4-3-3-5-4,4-6-6-4-1-2');">EASY #2<span id='score_7' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_8'><a href="javascript:app_load_puzzle('id=8&author=ian&title=EASY%20#3&dimensions=6-6&fixed=0-0-EW,5-0-SW,1-5-EN,5-5-EW&targets=1-5-5-4-4-4,5-4-4-2-4-4&tracks=1-0-SW,3-0-ES,4-0-EW,1-1-EN,2-1-EW,3-1-NW,5-1-NS,2-2-ES,3-2-EW,4-2-EW,5-2-NW,1-3-ES,2-3-NW,1-4-NS,2-4-ES,3-4-EW,4-4-SW,2-5-NW,4-5-EN&counts=1-5-5-4-4-4,5-4-4-2-4-4')">EASY #3<span id='score_8' class='score'></span></a></li>
+<li class="puzzle_links_item" id="puzzle_50"><a href="javascript:app_load_puzzle('id=50&author=ian&title=EASY #4&dimensions=6-6&fixed=0-2-EW,5-5-EN&targets=3-3-4-4-1-2,3-4-3-2-4-1&tracks=0-0-ES,1-0-EW,2-0-SW,0-1-EN,1-1-SW,2-1-EN,3-1-SW,1-2-NW,3-2-NS,2-3-ES,3-3-NW,2-4-EN,3-4-EW,4-4-EW,5-4-SW&counts=3-3-4-4-1-2,3-4-3-2-4-1');">EASY #4<span id="score_50" class="score"></span></a></li>
+<li class="puzzle_links_item" id="puzzle_51"><a href="javascript:app_load_puzzle('id=51&author=ian&title=EASY #5&dimensions=6-6&fixed=5-0-EW,0-5-EW&targets=1-1-2-3-6-4,3-2-1-2-4-5&tracks=3-0-ES,4-0-EW,3-1-EN,4-1-SW,4-2-NS,4-3-EN,5-3-SW,2-4-ES,3-4-EW,4-4-SW,5-4-NS,1-5-EW,2-5-NW,4-5-EN,5-5-NW&counts=1-1-2-3-6-4,3-2-1-2-4-5');">EASY #5<span id="score_51" class="score"></span></a></li>
+<li class="puzzle_links_item" id="puzzle_52"><a href="javascript:app_load_puzzle('id=52&author=ian&title=EASY #6&dimensions=6-6&fixed=5-2-EW,0-3-NW&targets=4-4-4-5-3-3,4-3-6-3-3-4&tracks=2-0-ES,3-0-EW,4-0-EW,5-0-SW,2-1-NS,4-1-ES,5-1-NW,0-2-ES,1-2-SW,2-2-EN,3-2-SW,4-2-EN,1-3-NS,3-3-NS,0-4-ES,1-4-NW,3-4-NS,0-5-EN,1-5-EW,2-5-EW,3-5-NW&counts=4-4-4-5-3-3,4-3-6-3-3-4');">EASY #6<span id="score_52" class="score"></span></a></li>
+<li class="puzzle_links_item" id="puzzle_53"><a href="javascript:app_load_puzzle('id=53&author=ian&title=EASY #7&dimensions=6-6&fixed=0-0-SW,5-5-EN&targets=2-2-4-2-3-2,3-3-3-3-2-1&tracks=1-0-ES,2-0-SW,0-1-EN,1-1-NW,2-1-NS,2-2-NS,3-2-ES,4-2-SW,2-3-EN,3-3-NW,4-3-NS,4-4-EN,5-4-SW&counts=2-2-4-2-3-2,3-3-3-3-2-1');">EASY #7<span id="score_53" class="score"></span></a></li>
+<li class="puzzle_links_item" id="puzzle_54"><a href="javascript:app_load_puzzle('id=54&author=ian&title=EASY #8&dimensions=6-6&fixed=5-0-NW,0-2-SW&targets=4-3-1-3-6-3,2-2-4-4-3-5&tracks=4-0-ES,4-1-EN,5-1-SW,3-2-ES,4-2-EW,5-2-NW,0-3-EN,1-3-SW,3-3-EN,4-3-SW,0-4-ES,1-4-NW,4-4-NS,0-5-EN,1-5-EW,2-5-EW,3-5-EW,4-5-NW&counts=4-3-1-3-6-3,2-2-4-4-3-5');">EASY #8<span id="score_54" class="score"></span></a></li>
+<li class="puzzle_links_item" id="puzzle_55"><a href="javascript:app_load_puzzle('id=55&author=ian&title=EASY #9&dimensions=6-6&fixed=0-0-NS,2-3-EW,5-3-ES&targets=4-3-4-5-1-2,1-4-1-5-6-2&tracks=0-1-EN,1-1-EW,2-1-EW,3-1-SW,3-2-NS,0-3-ES,1-3-EW,3-3-NW,0-4-EN,1-4-EW,2-4-SW,3-4-ES,4-4-EW,5-4-NW,2-5-EN,3-5-NW&counts=4-3-4-5-1-2,1-4-1-5-6-2');">EASY #9<span id="score_55" class="score"></span></a></li>
+<li class="puzzle_links_item" id="puzzle_56"><a href="javascript:app_load_puzzle('id=56&author=ian&title=EASY #10&dimensions=6-6&fixed=2-0-NS,5-2-ES&targets=4-6-5-4-3-2,3-3-5-5-4-4&tracks=0-0-ES,1-0-SW,0-1-NS,1-1-EN,2-1-NW,0-2-NS,1-2-ES,2-2-EW,3-2-SW,0-3-EN,1-3-NW,3-3-NS,4-3-ES,5-3-NW,1-4-ES,2-4-EW,3-4-NW,4-4-NS,1-5-EN,2-5-EW,3-5-EW,4-5-NW&counts=4-6-5-4-3-2,3-3-5-5-4-4');">EASY #10<span id="score_56" class="score"></span></a></li>
+
+<li class='puzzle_links_item' id='puzzle_9'><a href="javascript:app_load_puzzle('id=9&author=ian&title=MEDIUM%20#1&dimensions=8-8&fixed=0-1-EW,3-3-EW,6-4-EW,7-7-EW&targets=1-2-3-4-3-6-4-3,3-5-4-4-3-2-2-3&tracks=1-0-ES,2-0-EW,3-0-SW,1-1-NW,3-1-EN,4-1-EW,5-1-SW,2-2-ES,3-2-EW,4-2-EW,5-2-NW,2-3-EN,4-3-EW,5-3-SW,5-4-EN,7-4-SW,6-5-ES,7-5-NW,5-6-ES,6-6-NW,5-7-EN,6-7-EW&counts=1-2-3-4-3-6-4-3,3-5-4-4-3-2-2-3');">MEDIUM #1<span id='score_9' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_10'><a href="javascript:app_load_puzzle('id=10&author=ian&title=MEDIUM%20#2&dimensions=8-8&fixed=7-0-ES,4-3-NS,0-7-EW&targets=3-5-3-6-7-5-2-2,5-5-2-5-6-5-3-2&tracks=3-0-ES,4-0-EW,5-0-EW,6-0-SW,3-1-EN,4-1-EW,5-1-SW,6-1-EN,7-1-NW,4-2-ES,5-2-NW,0-3-ES,1-3-EW,2-3-EW,3-3-SW,0-4-EN,1-4-SW,2-4-ES,3-4-NW,4-4-EN,5-4-SW,1-5-NS,2-5-EN,3-5-SW,4-5-ES,5-5-NW,1-6-NS,3-6-EN,4-6-NW,1-7-NW&counts=3-5-3-6-7-5-2-2,5-5-2-5-6-5-3-2');">MEDIUM #2<span id='score_10' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_11'><a href="javascript:app_load_puzzle('id=11&author=ian&title=MEDIUM #3&dimensions=8-8&fixed=0-4-EW,7-7-EN&targets=3-4-2-4-4-4-5-3,3-6-3-2-6-4-4-1&tracks=2-0-ES,3-0-EW,4-0-SW,0-1-ES,1-1-EW,2-1-NW,4-1-EN,5-1-EW,6-1-SW,0-2-EN,1-2-SW,6-2-NS,1-3-NS,6-3-NS,1-4-NW,3-4-ES,4-4-EW,5-4-EW,6-4-NW,3-5-NS,5-5-ES,6-5-EW,7-5-SW,3-6-EN,4-6-EW,5-6-NW,7-6-NS&counts=3-4-2-4-4-4-5-3,3-6-3-2-6-4-4-1');">MEDIUM #3<span id='score_11' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_12'><a href="javascript:app_load_puzzle('id=12&author=bella&title=BELLA #1&dimensions=8-8&fixed=3-0-ES,0-3-NS,3-4-NS,7-5-EW,0-6-NW,4-6-SW&targets=5-1-1-7-6-1-3-3,2-2-5-3-2-4-5-4&tracks=4-0-SW,3-1-NS,4-1-NS,0-2-ES,1-2-EW,2-2-EW,3-2-NW,4-2-NS,3-3-ES,4-3-NW,0-4-NS,0-5-NS,3-5-NS,6-5-ES,3-6-EN,6-6-EN,7-6-SW,4-7-EN,5-7-EW,6-7-EW,7-7-NW&counts=5-1-1-7-6-1-3-3,2-2-5-3-2-4-5-4');">BELLA #1<span id='score_12' class='score'></span></a></li>
+
+<li class='puzzle_links_item' id='puzzle_13'><a href="javascript:app_load_puzzle('id=13&author=ian&title=TRICKY%20#1&dimensions=10-10&fixed=5-0-EW,9-2-ES,0-4-SW,4-6-NW,4-8-EW&targets=2-5-4-4-6-5-7-2-5-4,4-4-3-4-8-6-4-3-5-3&tracks=4-0-ES,6-0-EW,7-0-SW,4-1-EN,5-1-SW,7-1-EN,8-1-SW,5-2-NS,8-2-NS,5-3-EN,6-3-SW,8-3-NS,9-3-NS,1-4-ES,2-4-EW,3-4-EW,4-4-SW,6-4-NS,8-4-NS,9-4-NS,0-5-EN,1-5-NW,4-5-NS,6-5-NS,8-5-EN,9-5-NW,2-6-ES,3-6-EW,6-6-NS,1-7-ES,2-7-NW,6-7-NS,1-8-NS,3-8-ES,5-8-EW,6-8-NW,1-9-EN,2-9-EW,3-9-NW&counts=2-5-4-4-6-5-7-2-5-4,4-4-3-4-8-6-4-3-5-3');">TRICKY #1<span id='score_13' class='score'></span></a></li>
+<li class='puzzle_links_item' id='puzzle_14'><a href="javascript:app_load_puzzle('id=14&author=ian&title=TRICKY%20#2&dimensions=8-10&fixed=5-3-EW,2-4-NS,5-6-SW,0-8-EW,5-9-ES&targets=1-4-6-5-7-5-6-3,2-2-4-6-2-5-3-4-7-2&tracks=3-0-ES,4-0-SW,3-1-NS,4-1-NS,1-2-ES,2-2-EW,3-2-NW,4-2-NS,1-3-EN,2-3-SW,4-3-EN,6-3-EW,7-3-SW,7-4-NS,2-5-EN,3-5-EW,4-5-SW,6-5-ES,7-5-NW,4-6-EN,6-6-NS,1-7-ES,2-7-SW,5-7-NS,6-7-NS,1-8-NW,2-8-EN,3-8-EW,4-8-EW,5-8-NW,6-8-NS,6-9-NW&counts=1-4-6-5-7-5-6-3,2-2-4-6-2-5-3-4-7-2');">TRICKY #2<span id='score_14' class='score'></span></a></li>
+
+<li class='puzzle_links_item' id='puzzle_15'><a href="javascript:app_load_puzzle('id=15&author=ian&title=TOUGHIE%20#1&dimensions=10-10&fixed=0-1-EW,7-5-EW,2-6-EW,8-9-NS&targets=4-6-4-6-4-4-5-3-6-3,3-8-3-6-3-8-5-4-4-1&tracks=3-0-ES,4-0-EW,5-0-SW,1-1-SW,3-1-EN,4-1-SW,5-1-EN,6-1-EW,7-1-EW,8-1-SW,1-2-NS,4-2-NS,8-2-NS,1-3-EN,2-3-SW,3-3-ES,4-3-NW,8-3-EN,9-3-SW,2-4-NS,3-4-NS,9-4-NS,0-5-ES,1-5-EW,2-5-NW,3-5-NS,6-5-ES,8-5-EW,9-5-NW,0-6-NS,1-6-ES,3-6-NW,6-6-NS,0-7-EN,1-7-NW,5-7-ES,6-7-NW,5-8-EN,6-8-EW,7-8-EW,8-8-SW&counts=4-6-4-6-4-4-5-3-6-3,3-8-3-6-3-8-5-4-4-1');">TOUGHIE #1<span id='score_15' class='score'></span></a></li>
+<!-- Test webview with the puzzle state as a 'real' querystring. Usually I just use localStorage between this webview and puzzle.html
+     because appcache treats any webview+querystring as a new webview so the caching was broken. -->
+<li class='puzzle_links_item' id='puzzle_16'><a href="javascript:app_load_puzzle('id=16&author=ian&title=TOUGHIE%20#2&dimensions=10-10&fixed=9-0-EW,2-1-EW,8-3-EW,0-8-EW,6-9-EW&targets=1-3-3-7-4-7-4-5-8-4,6-7-4-6-4-2-4-3-7-3&tracks=1-0-ES,2-0-EW,3-0-EW,4-0-SW,8-0-ES,1-1-EN,3-1-SW,4-1-EN,5-1-EW,6-1-SW,8-1-NS,3-2-NS,6-2-EN,7-2-EW,8-2-NW,3-3-EN,4-3-EW,5-3-SW,7-3-ES,9-3-SW,5-4-EN,6-4-EW,7-4-NW,9-4-NS,8-5-ES,9-5-NW,3-6-ES,4-6-EW,5-6-SW,8-6-NS,3-7-NS,5-7-NS,8-7-NS,1-8-EW,2-8-EW,3-8-NW,5-8-NS,7-8-ES,8-8-NW,5-9-EN,7-9-NW&counts=1-3-3-7-4-7-4-5-8-4,6-7-4-6-4-2-4-3-7-3');">TOUGHIE #2<span id='score_16' class='score'></span></a></li>
+
+</ul>
+
+<!-- this 'local_puzzles' div is used in the BUILD process:
+When the 'SAVE' icon is clicked on puzzle.html, the puzzle state is saved to localStorage.
+When this webview is loaded, javascript reads the puzzle states from localStorage and lists them
+here. At the moment I simply cut-and-paste the links from the browser into the list above.
+-->
+<div id="local_puzzles">
+</div>
+
+<script>
+    //localStorage.setItem("bah","BAH")
+    //alert("puzzles.html querystring="+localStorage.getItem("querystring")+", bah="+localStorage.getItem("bah"));
+</script>
+</body>
+</html>

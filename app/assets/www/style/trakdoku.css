@@ -1,0 +1,181 @@
+/* This CSS file is loaded by index.html and trakdoku.html
+author: Ian Lewis
+*/
+body {font-family: helvetica;
+    background-color: #CEF6CE;
+}
+
+body{
+      margin:0;
+      padding:0;
+      /* width: 90%; */
+      /* border: red solid 1px; */
+}
+
+/* index.html */
+
+.icon_overview > div {
+     display: inline; 
+}
+
+.icon_overview > img {
+    vertical-align: bottom;
+    margin: 3px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.help_image {
+    width:90%;
+    text-align:center;
+ }
+
+ .help_image > img {
+    width: 90%;
+ }
+
+ .help_image > a > img {
+    width: 90%;
+ }
+
+ .footer { /* used for copyright & version at foot of index.html */
+    font-size: 8px;
+    color: lightgray;
+ }
+
+/* ****************************************************************************
+Formatting for puzzle rectangle in trakdoku.html
+
+The puzzle is a <table>, pretty much as you'd expect by looking at it with
+rows/columns for each of the puzzle 'cells' (i.e. <td>), plus additional cells
+for the counts on each row/column
+*/
+.puzzle { background-color: lightgray; 
+    border-collapse: collapse;
+    /* width: 100%; */
+    padding-bottom: 100%;
+}
+
+td {  border: 2px solid gray;
+          border-collapse: collapse;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          line-height: 0px; /* html5 fix to avoid space below image */
+}
+
+ .row_header {
+              height: 25px;
+ } 
+          
+ .cell {
+    width: 100%;
+    height: 100%;
+ }
+ 
+.row_counts_header {
+                background-color: lightblue; 
+                width: 25px;
+                }
+          
+.track_count { background-color: lightblue; 
+             }
+
+.target_count { background-color: lightgray; 
+              }
+
+.target_missed { background-color: lightgray; 
+                }
+.target_met { background-color: lightgreen; 
+}
+
+/* puzzle title in puzzle.html */
+.title_div > a > span , .title_div > span {
+    display: inline-block; 
+    vertical-align: middle;
+    color: #85B58E;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#menu {
+    margin: 5px;
+}
+
+.title_div > a {
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.title_div > a > img, .title_div > img {
+    vertical-align: middle;
+}
+
+/* puzzles.html */
+
+/* title in puzzle.html contains puzzle name */
+#title {
+    padding: 6px;
+}
+
+/* Score display in puzzle.html */
+#score {
+    font-size: 40px;
+    border: solid 2px grey;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    color: #85B58E;
+    font-weight: bold;
+    float: right;
+}
+
+/* build icons show/hide when build icon is clicked */
+.build_icons_hidden {
+    display: none;
+}
+
+.build_icons {
+    display: inline;
+}
+
+/* ****************************************************************************
+Formatting for puzzles.html
+*/
+/* list of available puzzles in puzzles.html */
+
+.puzzle_links {
+    /* border: solid red 1px; */
+    padding: 5px;
+}
+
+.puzzle_links > li {
+    list-style-type:none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+/* li class is swapped when puzzle solved */
+.puzzle_links_item {
+    background-color: lightgray;
+}
+
+.puzzle_links_item_solved {
+    background-color: lightgreen;
+}
+
+.puzzle_links > li > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.score {
+    color: green;
+    float: right;
+}

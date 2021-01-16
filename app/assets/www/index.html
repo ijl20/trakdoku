@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html> <!-- manifest="trakdoku.appcache"> -->
+<head>
+<title>Trakdoku</title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="style/trakdoku.css"/>
+
+<link rel="icon" sizes="32x32" href="img/icons/trakdoku_icon32.png" type='image/png'>
+<link rel="icon" sizes="128x128" href="img/icons/trakdoku_icon128.png" type='image/png'>
+<link rel="icon" sizes="192x192" href="img/icons/trakdoku_icon192.png" type='image/png'>
+
+<link rel="apple-touch-icon" href="img/icons/trakdoku_icon60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/icons/trakdoku_icon76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icons/trakdoku_icon120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icons/trakdoku_icon152.png">
+<link rel="apple-touch-icon-precomposed" href="img/icons/trakdoku_icon196.png"/>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<script src="js/trakdoku.js"></script>
+<script src="js/index.js"></script>
+
+</head>
+<body>
+<div class='title_div'><img src="img/icons/trakdoku_icon60.png"><span>Trakdoku</span></div>
+<p>
+<b>Instructions:</b><br/>
+<i>Just click on the squares</i>.<br/>
+The puzzle is solved when:</p>
+<ul>
+<li>your track connects between the two stations on the edges</li>
+<li>via all stations in between (if any)</li>
+<li>and <b>the counts of the tracks in each row and column match the required numbers.</b></li>
+</ul>
+
+<p>The picture below shows the solution to 'EASY #3':</p>
+
+<div class="help_image">
+    <img src='img/help/example.png'/>
+</div>
+
+<div class="icon_overview">
+    <img src="img/icons/undo.png">
+    <div><b>UNDO</b> - click this to step backwards through changes you've made to the puzzle.
+    </div>
+</div>
+
+<div class="icon_overview">
+    <img src="img/icons/erase.png">
+    <div><b>ERASE</b> - this toggles on (green) and off (gray). While enabled, clicking on any
+        puzzle piece will remove it.
+    </div>
+</div>
+
+<div class="icon_overview">
+    <img src="img/icons/answer.png">
+    <div><b>ANSWER</b> - this toggles on (green) and off (gray) to display the puzzle answer.
+    </div>
+</div>
+
+
+<div class="help_image">
+    <a href="javascript:app_next_page('puzzles.html');"><img src="img/help/puzzles_arrow.png"></a>
+</div>
+
+<div class="footer">(c) Ian Lewis. Version 1.0.2</div>
+</body>
+</html>

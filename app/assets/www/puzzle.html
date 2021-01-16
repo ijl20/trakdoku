@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html> <!-- manifest="trakdoku.appcache"> -->
+<head>
+<meta charset="UTF-8">
+<title>Trakdoku</title>
+<link rel="stylesheet" type="text/css" href="style/trakdoku.css"/>
+<link rel="icon" sizes="192x192" href="img/icons/trakdoku_icon192.png" type='image/png'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+<script src="js/trakdoku.js"></script>
+<script src="js/puzzle.js"></script>
+
+<script>
+
+/* window.onresize = msg; */
+function msg() {
+    // get all the track img elements (IE 9+)
+    var cells = document.getElementsByClassName('cell');
+    // check the current screen dimensions
+    var current_width = document.documentElement.clientWidth / puzzle_width; // width of screen in CSS pixels / cells
+    var current_height = document.documentElement.clientHeight / puzzle_height; // height of screen in CSS pixels / cells
+    // the puzzle should fit into EITHER the width or height, whichever is smaller
+    var size = current_width;
+    if (current_height < current_width)
+    {
+        size = current_height;
+    }
+    size = Math.floor(size * 0.9);
+    for (var i=0; i<cells.length; i++)
+    {
+        var e = cells[i];
+        e.style.width = size+'px';
+        e.style.height = e.style.width;
+    }
+    //location.href = '#';
+    location.href = '#puzzle';
+    //alert('width,height='+document.documentElement.clientWidth+','+document.documentElement.clientHeight+'+cells='+cells.length);
+}
+
+</script>
+</head>
+<body onload="javascript:trakdoku_loaded('puzzle');">
+
+<div class='title_div'><a href="javascript:app_next_page('puzzles.html');"><img src="img/icons/back_icon.png"></a> <span id='title'></span></div>
+
+<div id="menu">
+
+<a href="javascript:undo();"><img id='undo_icon' src='img/icons/undo.png' title='UNDO last update'/></a>
+<a href="javascript:erase();"><img id='erase_icon' src='img/icons/erase.png' title='ERASE mode'/></a>
+<a href="javascript:answer('puzzle')"><img id='answer_icon' src='img/icons/answer.png' title='ANSWER'/></a>
+<!-- <a href="javascript:build('puzzle');"><img id='build_icon' src='img/icons/build.png' title='BUILD mode'/></a>
+<span id='build_icons' class='build_icons_hidden'>
+    <a href="javascript:fixed()"><img id='fixed_icon' src='img/icons/fixed.png' title='Change track pieces to STATIONS'/></a>
+    <a href="javascript:save_state('puzzle')"><img id='save_icon' src='img/icons/save.png' title='SAVE this puzzle to homepage'/></a>
+    <a href="javascript:row_plus('puzzle')"><img id='row_plus_icon' src='img/icons/row_plus.png' title='ADD A ROW'/></a>
+    <a href="javascript:col_plus('puzzle')"><img id='col_plus_icon' src='img/icons/col_plus.png' title='ADD A COLUMN'/></a>
+    <a href="javascript:row_minus('puzzle')"><img id='row_minus_icon' src='img/icons/row_minus.png' title='REMOVE A ROW'/></a>
+    <a href="javascript:col_minus('puzzle')"><img id='col_minus_icon' src='img/icons/col_minus.png' title='REMOVE A COLUMN'/></a>
+</span>
+-->
+    <span id='score'>0</span>
+</div>
+
+<table id='puzzle' class='puzzle'>
+</table>
+<div id='status'></div>
+<script>
+    //localStorage.setItem("foo","Hello World?");
+    //alert("Hello querystring='"+localStorage.getItem("querystring")+"', foo="+localStorage.getItem("foo")+", bah="+localStorage.getItem("bah"));
+
+</script>
+</body>
+</html>
